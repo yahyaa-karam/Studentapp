@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/student_card_background"
+    android:padding="8dp"
+    android:layout_margin="6dp">
+
+    <!-- Photo column -->
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_person"
+        android:scaleType="centerCrop"
+        android:background="#ddd"
+        android:layout_gravity="center"
+        android:contentDescription="@string/photo_desc" />
+
+    <!-- ID -->
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="ID"
+        android:textSize="14sp"
+        android:textColor="#000" />
+
+    <!-- Nom -->
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Nom"
+        android:textSize="14sp"
+        android:textColor="#000" />
+
+    <!-- Prénom -->
+    <TextView
+        android:id="@+id/prenom"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Prenom"
+        android:textSize="14sp"
+        android:textColor="#000" />
+
+    <!-- Date de naissance -->
+    <TextView
+        android:id="@+id/dateNaissance"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Date"
+        android:textSize="14sp"
+        android:textColor="#000" />
+</LinearLayout>
